@@ -3,10 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <PreBuildEvent>if exist ".locked" del ".locked"
-if exist "" if not exist ".locked" move "" ".locked"
-cd $(TargetDir)
-del RestartProgramming.pdb</PreBuildEvent>
+    <PreBuildEvent>cd $(OutDir)
+del RestartProgramming.pdb
+
+if exist ".locked" del ".locked"
+if exist "" if not exist ".locked" move "" ".locked"</PreBuildEvent>
   </PropertyGroup>
 
 </Project>

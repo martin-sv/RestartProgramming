@@ -5,9 +5,9 @@ using System.Globalization;
 using System.Text;
 using System.Threading;
 
-namespace RestartProgramming
+namespace RestartProgrammingNF
 {
-    class Fibonachi
+    public class Fibonachi
     {
         private ulong count = 0;
         private ulong fibonum = 0;
